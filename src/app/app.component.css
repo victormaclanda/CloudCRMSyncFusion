@@ -332,7 +332,7 @@ body {
 }
 
 #header .icon-menu:before {
-    content: '\e812';
+    content: url(../assets/images/iconosMenuSuperior/hamburguer.png);
 }
 
 #sidebar-menu .icon,
