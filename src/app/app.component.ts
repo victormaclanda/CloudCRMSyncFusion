@@ -1,7 +1,6 @@
 import { Component, ViewEncapsulation, Inject, ViewChild } from '@angular/core';
 import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
-import { Menu, MenuItemModel } from '@syncfusion/ej2-navigations';
-import { enableRipple } from '@syncfusion/ej2-base';
+import { MenuItemModel } from '@syncfusion/ej2-navigations';
 
 
 @Component({
