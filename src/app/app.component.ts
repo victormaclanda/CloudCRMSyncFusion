@@ -13,10 +13,10 @@ export class AppComponent {
   title = 'pruebacrm';
     @ViewChild('sidebarMenuInstance')
     public sidebarMenuInstance: SidebarComponent;
-    public width: string = '220px';
+    public width: string = '130px';
     public mediaQuery: string = ('(min-width: 600px)');
     public target: string = '.main-content';
-    public dockSize: string = '50px';
+    public dockSize: string = '0px';
      public enableDock: boolean = true;
     constructor() {
         
@@ -24,47 +24,47 @@ export class AppComponent {
     public menuItems: MenuItemModel[] = [
         {
             text: 'Clientes',
-            iconCss: 'icon-clientes'
+            iconCss: 'icon-clientes ico'
         },
         {
             text: 'Contactos',
-            iconCss: 'icon-contactos'
+            iconCss: 'icon-contactos ico'
         },
         {
             text: 'Clientes potenciales',
-            iconCss: 'icon-clientespot'
+            iconCss: 'icon-clientespot ico'
         },
         {
             text: 'Oportunidades',
-            iconCss: 'icon-oportunidades'
+            iconCss: 'icon-oportunidades ico'
         },
         {
             text: 'Tareas',
-            iconCss: 'icon-tareas'
+            iconCss: 'icon-tareas ico'
         },
         {
             text: 'Email',
-            iconCss: 'icon-email'
+            iconCss: 'icon-email ico'
         },
         {
             text: 'Informes',
-            iconCss: 'icon-informes'
+            iconCss: 'icon-informes ico'
         },
         {
             text: 'Calendario',
-            iconCss: 'icon-calendario'
+            iconCss: 'icon-calendario ico'
         },
         {
             text: 'Portfolio',
-            iconCss: 'icon-portfolio'
+            iconCss: 'icon-portfolio ico'
         },
         {
             text: 'Campañas',
-            iconCss: 'icon-campanias'
+            iconCss: 'icon-campanias ico'
         },
         {
             text: 'Tickets',
-            iconCss: 'icon-tickets'
+            iconCss: 'icon-tickets ico'
         }
     ];
      public AccountMenuItem: MenuItemModel[] = [

@@ -8,12 +8,6 @@ body {
     height: 50px;
 }
 
-#header #hamburger.icon-menu {
-    font-size: 24px;
-    float: left;
-    line-height: 50px;
-}
-
 #header .right-header {
     height: 50px;
     padding: 7px;
@@ -34,13 +28,6 @@ body {
     margin-top: 15px;
     list-style: none;
 }
-
-@media(max-width:500px) {
-	 #header .right-header.list.support,
-     #header .right-header.list.tour {
-         display: none;
-     }
- }
 
 /* text input styles */
 #header .search-icon {
@@ -110,10 +97,13 @@ margin-left: 15px;
 }
 
 .preguntas {
-    margin-top: 13px;
-    margin-left: 42px;
+    margin-top: 15px;
+    margin-left: 45px;
 }
 
+#sidebar-menu {
+    width: 120px;
+}
 #header .e-menu-item .e-caret {
     line-height: 35px;
 }
@@ -122,17 +112,8 @@ margin-left: 15px;
 /* vertical-menu styles */
 
 #sidebar-menu .e-menu-wrapper ul .e-menu-item.e-menu-caret-icon {
-    width: 220px;
+    width: 120px;
 }
-
-@media(max-width: 500px) {
-
-    #header .right-header.list.support,
-    #header .right-header.list.tour {
-        display: none;
-    }
- }
-
 #sidebar-menu .e-menu-wrapper ul .e-menu-item:hover,
 .e-menu-item.e-focused:hover {
     background-color: #414745 !important;
@@ -149,7 +130,8 @@ margin-left: 15px;
 #header .e-menu-item .e-caret,
 .dock-menu .e-menu-wrapper ul .e-menu-item {
     color: #fff !important;
-
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 120px;
 }
 
 .dock-menu.e-close .e-menu-wrapper ul .e-menu-item {
@@ -207,15 +189,12 @@ margin-left: 15px;
 /*button styles */
 #sidebar-menu .action-btn {
     margin-left: 16px;
-    width: 165px;
+    width: 120px;
     height: 30px;
     font-size: 13px;
     border-radius: 5px;
 }
 
-#sidebar-menu .action-btn {
-    background-color: #1784c7;
-}
 /* custom code start */
 /*end of button styles */
 .sb-content-tab #wrapper {
@@ -344,9 +323,43 @@ body {
     color: #ffffff;
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:600px){
     #hamburger{
         display:none;
+    }
+}
+
+@media screen and (max-width:600px){
+    .logo {
+        margin-left: 30%;
+        margin-top: 13px;
+        }
+        
+    .textologo{
+        margin-left: 15px;
+        }
+        
+    .pregunta-menu {
+            display: none;
+        }
+
+    .mas-opciones {
+            display: none;
+        }
+    
+    #header > ul > li.right-header.list > div > ejs-menu {
+            display: none;
+    }
+
+    .notificaciones {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    #hamburger{
+        float: left;
+        margin-top: 15px;
+        margin-left: 3%;
     }
 }
 
@@ -362,3 +375,58 @@ body {
     margin-top: 15px;
 }
 /*icon styles */
+
+.ico{
+    display: block !important;
+    margin-top: 0;
+    padding-bottom: 6px;
+    width: auto !important;
+    line-height: 10px!important;
+    margin-left: 9px;
+}
+
+.menu-lateral{
+    display: block !important;
+}
+
+.menu-lateral li{
+    height: 57px !important;
+    line-height: 10px !important;
+    text-align: center;
+    width: auto !important;
+}
+
+.sidebar-menu{
+    width: 150px !important;
+    margin-top: 29px;
+}
+
+@media screen and (max-width:550px){
+    .logo {
+        margin-left: 28%;
+        }
+    }
+
+@media screen and (max-width:500px){
+    .logo {
+        margin-left: 26%;
+        }
+    }
+
+@media screen and (max-width:400px){
+    .logo {
+        margin-left: 24%;
+        }
+    }
+
+ @media screen and (max-width:360px){
+    .logo {
+        margin-left: 20%;
+        }
+    }
+
+@media screen and (max-width:310px){
+    .logo {
+           margin-left: 10%;
+        }
+    }
