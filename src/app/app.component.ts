@@ -24,83 +24,56 @@ export class AppComponent {
     }
     public menuItems: MenuItemModel[] = [
         {
-            text: 'Overview',
-            iconCss: 'icon-globe icon',
-            items: [
-                { text: 'All Data' },
-                { text: 'Category2' },
-                { text: 'Category3' }
-            ]
+            text: 'Clientes',
+            iconCss: 'icon-clientes'
         },
         {
-            text: 'Notification',
-            iconCss: 'icon-bell-alt icon',
-            items: [
-                { text: 'Message' },
-                { text: 'Facebook' },
-                { text: 'Twitter' }
-            ]
+            text: 'Contactos',
+            iconCss: 'icon-contactos'
         },
         {
-            text: 'Comments',
-            iconCss: 'icon-comment-inv-alt2 icon',
-            items: [
-                { text: 'Category1' },
-                { text: 'Category2' },
-                { text: 'Category3' }
-            ]
+            text: 'Clientes potenciales',
+            iconCss: 'icon-clientespot'
         },
         {
-            text: 'Bookmarks',
-            iconCss: 'icon-bookmark icon',
-            items: [
-                { text: 'All Comments' },
-                { text: 'Add Comments' },
-                { text: 'Delete Comments' }
-            ]
+            text: 'Oportunidades',
+            iconCss: 'icon-oportunidades'
         },
         {
-            text: 'Images',
-            iconCss: 'icon-picture icon',
-            items: [
-                { text: 'Add Name' },
-                { text: 'Add Mobile Number' },
-                { text: 'Add Imaage' },
-            ]
+            text: 'Tareas',
+            iconCss: 'icon-tareas'
         },
         {
-            text: 'Users ',
-            iconCss: 'icon-user icon',
-            items: [
-                { text: 'Mobile1' },
-                { text: 'Mobile2' },
-                { text: 'Telephone' }
-            ]
+            text: 'Email',
+            iconCss: 'icon-email'
         },
         {
-            text: 'Settings',
-            iconCss: 'icon-eye icon',
-            items: [
-                { text: 'Change Profile' },
-                { text: 'Add Name' },
-                { text: 'Add Details' }
-            ]
+            text: 'Informes',
+            iconCss: 'icon-informes'
         },
         {
-            text: 'Info',
-            iconCss: 'icon-tag icon',
-            items: [
-                { text: 'Facebook' },
-                { text: 'Mobile' },
-            ]
+            text: 'Calendario',
+            iconCss: 'icon-calendario'
+        },
+        {
+            text: 'Portfolio',
+            iconCss: 'icon-portfolio'
+        },
+        {
+            text: 'Campañas',
+            iconCss: 'icon-campanias'
+        },
+        {
+            text: 'Tickets',
+            iconCss: 'icon-tickets'
         }
     ];
      public AccountMenuItem: MenuItemModel[] = [
         {
-            text: 'Account',
+            iconCss: 'imagen',
             items: [
-                { text: 'Profile' },
-                { text: 'Sign out' },
+                { text: 'Configuración' },
+                { text: 'Cerrar sesión' },
             ]
         }
     ];

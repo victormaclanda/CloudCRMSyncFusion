@@ -1,12 +1,5 @@
 <div class="control-section">
   <!-- sample level element  -->
-  <div class="col-lg-12 col-sm-12 col-md-12 center">
-      Click/Touch the button to view the sample
-  </div>
-  <div class="col-lg-12 col-sm-12 col-md-12 center">
-      <a class="e-btn" id="newTab" (click)="newTabClick()" target="_blank">Open in new Tab</a>
-  </div>
-  <!-- sample level element  -->
   <div id="wrapper">
       <div class="col-lg-12 col-sm-12 col-md-12" id="sidebar-section">
           <div class="col-lg-12 col-sm-12 col-md-12">
@@ -14,15 +7,19 @@
               <div class="header-section dock-menu" id="header">
                   <ul class="header-list">
                       <li id="hamburger" class="icon-menu icon list" (click)="openClick()"></li>
-                      <input type="text" placeholder="Search..." class="search-icon list">
+                        <img src="../assets/images/iconosMenuSuperior/logo_cloud_crm.png" class="logo">
+                        <img src="../assets/images/iconosMenuSuperior/clodcrmtxt.png" class="textologo">
                       <li class="right-header list">
                           <div class="horizontal-menu">
+                            <img src="../assets/images/iconosMenuSuperior/logo_add.png">
+                            <img src="../assets/images/iconosMenuSuperior/logo_notificaciones.png" class="notificaciones">
                               <!-- Menu element declaration -->
                               <ejs-menu [items]='AccountMenuItem' cssClass='dock-menu'></ejs-menu>
+                              <div class="pregunta-menu">
+                                <img src="../assets/images/iconosMenuSuperior/logo_preguntas.png" class="preguntas">
+                            </div>
                           </div>
                       </li>
-                      <li class="right-header list support">Support</li>
-                      <li class="right-header list tour">Tour</li>
                   </ul>
               </div>
               <!--end of header-section  declaration -->
@@ -30,13 +27,8 @@
               <ejs-sidebar id="sidebar-menu" class="dock-menu" #sidebarMenuInstance [enableDock]='enableDock' [width]='width'
                   [dockSize]='dockSize' [mediaQuery]='mediaQuery' [target]='target'>
                   <div class="main-menu">
-                      <p class="main-menu-header">MAIN</p>
                       <!-- Menu element declaration -->
-                      <ejs-menu [items]='menuItems' orientation='Vertical' cssClass='dock-menu'></ejs-menu>
-                  </div>
-                  <div class="action">
-                      <p class="main-menu-header">ACTION</p>
-                      <button class="e-btn action-btn" id="action-button">+ Button</button>
+                      <ejs-menu [items]='menuItems' orientation='Vertical' cssClass='dock-menu alto-menu'></ejs-menu>
                   </div>
               </ejs-sidebar>
               <!-- end of sidebar element -->

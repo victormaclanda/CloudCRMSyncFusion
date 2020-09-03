@@ -27,6 +27,8 @@
     "@syncfusion/ej2-angular-navigations": "^18.2.55",
     "@syncfusion/ej2-base": "^18.2.55",
     "@syncfusion/ej2-data": "^18.2.54",
+    "@types/jest": "^26.0.13",
+    "@types/mocha": "^8.0.3",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
