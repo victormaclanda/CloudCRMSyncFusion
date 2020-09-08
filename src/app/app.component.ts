@@ -13,7 +13,7 @@ export class AppComponent {
   title = 'pruebacrm';
     @ViewChild('sidebarMenuInstance')
     public sidebarMenuInstance: SidebarComponent;
-    public width: string = '130px';
+    public width: string = '140px';
     public mediaQuery: string = ('(min-width: 600px)');
     public target: string = '.main-content';
     public dockSize: string = '0px';

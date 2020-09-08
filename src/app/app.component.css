@@ -54,7 +54,7 @@ body {
 }
 
 #maintext .sidebar-menu-content {
-    margin-top: 230px;
+    margin-top: 50px;
     text-align: center;
     font-size: 32px;
     color: #1784c7;
@@ -112,11 +112,11 @@ margin-left: 15px;
 /* vertical-menu styles */
 
 #sidebar-menu .e-menu-wrapper ul .e-menu-item.e-menu-caret-icon {
-    width: 120px;
+    width: 80px;
 }
 #sidebar-menu .e-menu-wrapper ul .e-menu-item:hover,
 .e-menu-item.e-focused:hover {
-    background-color: #414745 !important;
+    background-color: #4E5654 !important;
 }
 
 /* end of vertical-menu styles */
@@ -130,8 +130,6 @@ margin-left: 15px;
 #header .e-menu-item .e-caret,
 .dock-menu .e-menu-wrapper ul .e-menu-item {
     color: #fff !important;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: 120px;
 }
 
 .dock-menu.e-close .e-menu-wrapper ul .e-menu-item {
@@ -141,23 +139,6 @@ margin-left: 15px;
 .dock-menu.e-close ul .e-menu-item.e-menu-caret-icon {
     padding-right: 12px;
 }
-
-#sidebar-menu.e-dock.e-close .e-menu-wrapper ul .e-menu-item .e-caret,
-#sidebar-menu.e-dock.e-close .main-menu-header,
-#sidebar-menu.e-dock.e-close .action-btn {
-    display: none;
-}
-
-#sidebar-menu.e-dock.e-close .e-menu-wrapper ul .e-menu-item.e-menu-caret-icon,
-#sidebar-menu.e-dock.e-close .e-menu-wrapper ul.e-vertical {
-    min-width: 0;
-    width: 50px !important;
-}
-
-#sidebar-menu.e-dock.e-close .e-menu-wrapper ul.e-menu {
-    font-size: 0px;
-}
-
 #sidebar-menu.e-dock.e-close .e-menu-item .e-menu-icon {
     font-size: 20px;
     padding: 0;
@@ -314,6 +295,10 @@ body {
     content: url(../assets/images/iconosMenuSuperior/hamburguer.png);
 }
 
+.e-caret:before {
+    content: '\e36a';
+}
+
 #sidebar-menu .icon,
 #header #hamburger.icon-menu {
     font-family: 'fontello';
@@ -374,6 +359,7 @@ body {
 .alto-menu li{
     margin-top: 15px;
 }
+
 /*icon styles */
 
 .ico{
@@ -430,3 +416,27 @@ body {
            margin-left: 10%;
         }
     }
+
+.ancho-tabla{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.ancho-tabla h1{
+    color: #000000;
+    text-align: left;
+    font-size: 26px;
+}
+
+@media screen and (max-width:600px){
+    .ancho-tabla{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .ancho-tabla h1{
+        color: #000000;
+        text-align: center;
+        font-size: 26px;
+    }
+}
