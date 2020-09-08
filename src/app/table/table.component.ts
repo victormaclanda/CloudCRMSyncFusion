@@ -22,6 +22,6 @@ export class TableComponent implements OnInit {
     this.pageSettings = { pageCount: 3 };
     this.selectOptions = { persistSelection: true };
     this.editSettings = { allowDeleting: true };
-    this.toolbar = ['Delete', 'Edit'];
+    this.toolbar = ['Delete'];
   }
 }
